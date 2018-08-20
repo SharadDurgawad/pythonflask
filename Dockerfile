@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update -y 
+RUN apt-get update
 RUN apt-get install -y python-pip 
 RUN apt-get install -y python-dev
 
