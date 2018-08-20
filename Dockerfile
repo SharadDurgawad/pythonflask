@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM centos:7
 
-RUN apt-get update
-RUN apt-get install -y python-pip 
-RUN apt-get install -y python-dev
+RUN yum update
+RUN yum install -y python-pip 
+RUN yum install -y python-dev
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
