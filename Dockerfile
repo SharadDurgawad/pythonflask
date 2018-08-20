@@ -1,7 +1,5 @@
 FROM centos:7
 
-MAINTANER Your Name "durgawad@gmail.com"
-
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 
